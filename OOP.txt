@@ -1,0 +1,5 @@
+Encapsulation: It is the process of binding the datamembers and member functions of a class in a single object.
+
+Inheritance: It is the OOP concept which enable a class to reuse the data members and member functions of another class by inheriting it.
+
+Polymorphism: It is the property of OOP to have functions with same name but different bodies and to do different (generally similar) tasks.
