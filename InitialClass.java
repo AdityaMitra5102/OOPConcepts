@@ -51,11 +51,16 @@ class BaseClass extends SuperClass
 
 class ShowEncapsulation
 {
-    int n=5;
-    void show()
-    {
-        System.out.println("Showing"+ n);
-    }
+   private int n;
+ int getN()
+{
+return n;
+}
+
+int setN(int n)
+{
+this.n=n;
+}
 }
 
 public class InitialClass
@@ -64,7 +69,9 @@ public class InitialClass
     {
         System.out.println("Showing Encapsulation: int n and show() are encapsulated in object ob1");
         ShowEncapsulation ob1=new ShowEncapsulation();
-        ob1.show();
+        System.out.println("Setting n to 5");
+ob1.setN(5);
+System.out.println("n= "+ob1.getN());
         System.out.println();
         System.out.println("Showing inheritance");
         BaseClass ob2=new BaseClass();
