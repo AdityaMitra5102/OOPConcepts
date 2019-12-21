@@ -1,13 +1,13 @@
 interface ShowPolymorphism
 {
-    void runTimePolymorphism();
+    void runTimePolymorphism(); //Function to show polymorphism
 }
 
 class ShowPolymorphism1 implements ShowPolymorphism
 {
     public void runTimePolymorphism()
     {
-        System.out.println("This was runtime polymorphism from class ShowPolymorphism1");
+        System.out.println("This was runtime polymorphism from class ShowPolymorphism1"); //Runtime polymorphism method 1
     }
 }
 
@@ -15,7 +15,7 @@ class ShowPolymorphism2 implements ShowPolymorphism
 {
     public void runTimePolymorphism()
     {
-        System.out.println("This was runtime polymorphism from class ShowPolymorphism1");
+        System.out.println("This was runtime polymorphism from class ShowPolymorphism2"); //Runtime polymorphism method 2
     }
 }
 
@@ -23,16 +23,16 @@ class ShowCompileTimePolymorphism
 {
     void compileTimePolymorphism()
     {
-        System.out.println("Compile time polymorphism 1");
+        System.out.println("Compile time polymorphism 1"); //Function overload with no parameter
     }
 
     void compileTimePolymorphism(int n)
     {
-        System.out.println("Compile time polymorphism 2");
+        System.out.println("Compile time polymorphism 2"); //Function overload with int parameter
     }
 }
 
-class SuperClass
+class SuperClass //Base class
 {
     void show()
     {
@@ -40,24 +40,24 @@ class SuperClass
     }
 }
 
-class BaseClass extends SuperClass
+class InheritedClass extends SuperClass //Derived class
 {
     void show()
     {
-        super.show();
-        System.out.println("Showing inheritance: base class");
+        super.show(); //show() of super class
+        System.out.println("Showing inheritance: inherited class");
     }
 }
 
 class ShowEncapsulation
 {
-   private int n;
- int getN()
+   private int n; //data member encapsulated in object
+ int getN() //getter function
 {
 return n;
 }
 
-int setN(int n)
+int setN(int n) //setter function
 {
 this.n=n;
 }
